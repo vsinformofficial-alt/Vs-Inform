@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vs Inform | Real-Time Updates</title>
+    <meta name="description" content="Your dynamic source for live world news and sports information.">
+    <meta property="og:title" content="Vs Inform | Real-Time Updates" />
+    <meta property="og:description" content="Get the fastest, most reliable live news and sports updates from across the globe." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vs Inform | Breaking News" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo">
+          <span class="gradient-text">Vs Inform</span>
+        </div>
+        <span class="owner-tag">By Vihanga Sathsara</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="active" data-target="top">Top News</a></li>
+          <li><a href="#" data-target="world">World</a></li>
+          <li><a href="#" data-target="sports">Sports</a></li>
+          <li><a href="#" data-target="scores" class="scores-tab">Live Scores <span class="dot"></span></a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="search-container">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="search-input" placeholder="Search & press Enter...">
+        </div>
+        <div class="live-indicator">
+          <span class="dot"></span> Live
+        </div>
+      </div>
+    </header>
+
+    <div class="trending-bar">
+      <span class="trending-label">🔥 Trending:</span>
+      <div class="trending-tags" id="trending-tags">
+        <!-- Hashtags will be injected here via JS -->
+      </div>
+    </div>
+
+    <main class="container">
+      <section class="hero-section" id="hero-section">
+        <!-- Hero article will be injected here -->
+        <div class="skeleton-loader hero-skeleton"></div>
+      </section>
+
+      <div class="section-title">
+        <h2 id="current-category">Top News</h2>
+      </div>
+
+      <section class="news-grid" id="news-grid">
+        <!-- News cards will be injected here -->
+        <div class="skeleton-loader card-skeleton"></div>
+        <div class="skeleton-loader card-skeleton"></div>
+        <div class="skeleton-loader card-skeleton"></div>
+        <div class="skeleton-loader card-skeleton"></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>&copy; 2026 Vs Inform. Proudly owned and created by <strong style="color: var(--accent-color);">Vihanga Sathsara</strong>.</p>
+    </footer>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
